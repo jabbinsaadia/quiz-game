@@ -19,7 +19,7 @@ let questions = [
             "A. Margin",
             "B. Padding",
             "C. Border",
-            "D. Spacing"            
+            "D. Spacing"
         ]
     },
     {
@@ -31,7 +31,7 @@ let questions = [
             "B. prompt()",
             "C. alert()",
             "D. console.log()"
-            
+
         ]
     },
     {
