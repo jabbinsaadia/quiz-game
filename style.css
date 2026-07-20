@@ -453,12 +453,150 @@ body {
    border-color: #8d66e9;
 }
 
+
 .buttons button:nth-child(2) {
    background: transparent;
    color: #8d66e9;
 }
 
+
 .buttons button:nth-child(2):hover {
    background: #05000f;
    color: #fff;
+}
+
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .header {
+   padding: 15px 6%;
+  }
+  .logo {
+   font-size: 26px;
+  }
+  .navbar a {
+   margin-left: 20px;
+   font-size: 16px;
+  }
+  .main {
+   background-position: center top;
+   padding-top: 80px; /* space for fixed header */
+  }
+  .home-content h1 {
+   font-size: 48px;
+  }
+  .home-content p {
+   font-size: 15px;
+  }
+  .container {
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+  }
+  .home,
+  .quiz-section {
+   left: 0;
+   width: 100%;
+   position: relative;
+   padding: 40px 20px;
+  }
+  .quiz-box,
+  .result-box,
+  .popup-info {
+   width: 90%;
+  }
+  .quiz-box {
+   padding: 16px;
+  }
+  .quiz-box .question-text {
+   font-size: 18px;
+   padding: 8px 16px;
+  }
+  .option-list .option {
+   padding: 12px;
+   font-size: 16px;
+   margin: 10px 0;
+  }
+  .percentage-container .circular-progress {
+   width: 180px;
+   height: 180px;
+  }
+  .percentage-container .circular-progress::before {
+   width: 150px;
+   height: 150px;
+  }
+  .circular-progress .progress-value {
+   font-size: 34px;
+  }
+  .result-box .percentage-container {
+   width: 220px;
+  }
+  .popup-info {
+   width: 90%;
+   height: auto;
+   transform: translate(-50%, -50%) scale(.95);
+   padding: 16px;
+  }
+  body {
+   overflow: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+   padding: 12px 5%;
+  }
+  .navbar {
+   display: none; /* hide nav on small screens */
+  }
+  .logo {
+   font-size: 22px;
+  }
+  .home-content h1 {
+   font-size: 32px;
+  }
+  .home-content p {
+   font-size: 14px;
+  }
+  .home-content .start-btn {
+   width: 120px;
+   height: 44px;
+   font-size: 14px;
+  }
+  .quiz-box,
+  .result-box {
+   width: 100%;
+   border-radius: 4px;
+  }
+  .option-list .option {
+   font-size: 15px;
+   padding: 10px;
+  }
+  .buttons {
+   flex-direction: column;
+   gap: 10px;
+  }
+  .buttons button {
+   margin: 8px 0;
+   width: 100%;
+  }
+  .popup-info {
+   top: 55%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 95%;
+   height: auto;
+  }
+  .percentage-container .circular-progress {
+   width: 140px;
+   height: 140px;
+  }
+  .percentage-container .circular-progress::before {
+   width: 110px;
+   height: 110px;
+  }
+  .circular-progress .progress-value {
+   font-size: 28px;
+  }
 }
